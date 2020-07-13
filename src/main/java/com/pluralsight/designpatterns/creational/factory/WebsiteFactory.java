@@ -2,12 +2,12 @@ package com.pluralsight.designpatterns.creational.factory;
 
 public class WebsiteFactory {
 
-    public static Website getWebsite(String siteType) {
-        switch (siteType) {
-            case "blog": {
+    public static Website getWebsite(WebsiteKey key) {
+        switch (key) {
+            case BLOG: {
                 return new Blog();
             }
-            case "shop": {
+            case SHOP: {
                 return new Shop();
             }
             default: {
