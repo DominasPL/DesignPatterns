@@ -31,7 +31,7 @@ public class DbSingletonDemo {
         }
 
         timeBefore = System.currentTimeMillis();
-        connection = instance.getConnection();
+        instance.getConnection();
         timeAfter = System.currentTimeMillis();
 
         System.out.println(timeAfter - timeBefore);
