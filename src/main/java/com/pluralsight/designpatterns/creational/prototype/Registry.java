@@ -1,4 +1,4 @@
-package com.pluralsight.prototype;
+package com.pluralsight.designpatterns.creational.prototype;
 
 import java.util.HashMap;
 import java.util.Map;

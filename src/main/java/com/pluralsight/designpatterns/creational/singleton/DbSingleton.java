@@ -1,4 +1,4 @@
-package com.pluralsight.singleton;
+package com.pluralsight.designpatterns.creational.singleton;
 
 import org.apache.derby.jdbc.EmbeddedDriver;
 

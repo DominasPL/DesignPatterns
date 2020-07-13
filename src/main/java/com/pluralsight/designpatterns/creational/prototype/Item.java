@@ -1,4 +1,4 @@
-package com.pluralsight.prototype;
+package com.pluralsight.designpatterns.creational.prototype;
 
 public abstract class Item implements Cloneable {
 

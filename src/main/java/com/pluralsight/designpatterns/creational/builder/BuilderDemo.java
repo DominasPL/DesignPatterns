@@ -1,4 +1,4 @@
-package com.pluralsight.builder;
+package com.pluralsight.designpatterns.creational.builder;
 
 public class BuilderDemo {
 
