@@ -1,4 +1,4 @@
-package com.pluralsight.designpatterns.structural.bridge.shape1;
+package com.pluralsight.designpatterns.structural.bridge.shape;
 
 public class Red implements Color {
     @Override
