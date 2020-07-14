@@ -1,42 +1,42 @@
 package com.pluralsight.designpatterns.structural.adapter;
 
-public class EmployeeAdapterLdap implements Employee {
+public class EmployeeAdapterCsv implements Employee {
 
-    private EmployeeLdap instance;
+    private EmployeeCSV instance;
 
-    public EmployeeAdapterLdap(EmployeeLdap instance) {
+    public EmployeeAdapterCsv(EmployeeCSV instance) {
         this.instance = instance;
     }
 
     @Override
     public String getId() {
-        return instance.getCn();
+        return instance.getId() + "";
     }
 
     @Override
     public String getFirstName() {
-        return instance.getGivenName();
+        return instance.getFirstName();
     }
 
     @Override
     public String getLastName() {
-        return instance.getSurname();
+        return instance.getLastName();
     }
 
     @Override
     public String getEmail() {
-        return instance.getEmail();
+        return instance.getEmailAddress();
     }
 
     @Override
     public String toString() {
         return "id: " +
-                instance.getCn() +
+                instance.getId() +
                 ", firstName: " +
-                instance.getSurname() +
+                instance.getFirstName() +
                 ", lastName: " +
-                instance.getGivenName() +
+                instance.getLastName() +
                 ", email: " +
-                instance.getEmail();
+                instance.getEmailAddress();
     }
 }
