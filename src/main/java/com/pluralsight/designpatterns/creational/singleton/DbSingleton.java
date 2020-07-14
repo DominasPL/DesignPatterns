@@ -39,10 +39,10 @@ public class DbSingleton {
         return instance;
     }
 
-    public Connection getConnection() {
-        if (Objects.isNull(conn)) {
+    public Connection getConnection() throws SQLException {
+        if (Objects.isNull(conn) || conn.isClosed()) {
             synchronized (DbSingleton.class) {
-                if (Objects.isNull(conn)) {
+                if (Objects.isNull(conn) || conn.isClosed()) {
                     try {
                         String dbUrl = "jdbc:derby:memory:codejave/webdb;create=true";
                         conn = DriverManager.getConnection(dbUrl);
