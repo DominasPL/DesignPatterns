@@ -13,7 +13,7 @@ public class MediatorDemo {
 
            Colleague turnOnAllLightsColleague = new TurnOnAllLightsColleague(mediator);
            turnOnAllLightsColleague.execute();
-           
+
            Colleague turnOffAllLightsColleague = new TurnOffAllLightsColleague(mediator);
            turnOffAllLightsColleague.execute();
     }
